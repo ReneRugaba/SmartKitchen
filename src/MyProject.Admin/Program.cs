@@ -12,7 +12,7 @@ builder.Configuration.AddAzureKeyVaultConfiguration(builder.Configuration);
 
 builder.AddSerilog();
 
-builder.Services.AddDataProtectionDbContext(builder.Configuration);
+//builder.Services.AddDataProtectionDbContext(builder.Configuration);
 
 builder.Services.AddControllers();
 
