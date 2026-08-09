@@ -43,7 +43,7 @@ namespace MyProject.STS.Identity
             RegisterDbContexts(services);
 
             // Save data protection keys to db, using a common application name shared between Admin and STS
-            //services.AddDataProtection<IdentityServerDataProtectionDbContext>(Configuration);
+            // services.AddDataProtection<IdentityServerDataProtectionDbContext>(Configuration);
 
             // Add email senders which is currently setup for SendGrid and SMTP
             services.AddEmailSenders(Configuration);

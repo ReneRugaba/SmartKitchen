@@ -1,0 +1,84 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@using MyProject.STS.Identity.Configuration.Interfaces
+@inject IViewLocalizer Localizer
+@inject IRootConfiguration RootConfiguration
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@RootConfiguration.AdminConfiguration.PageTitle - Authentification</title>
+    <link rel="icon" type="image/x-icon" href="@UrlHelper.Content(RootConfiguration.AdminConfiguration.FaviconUri)" />
+    <link rel="shortcut icon" type="image/x-icon"
+          href="@UrlHelper.Content(RootConfiguration.AdminConfiguration.FaviconUri)" />
+    <script src="~/js/theme-init.js" asp-append-version="true"></script>
+    <link href="~/css/app.css" asp-append-version="true" rel="stylesheet" />
+    @await RenderSectionAsync("styles", required: false)
+</head>
+
+<body class="auth-desktop-container">
+    <!-- Panneau Gauche - Branding (Desktop uniquement) -->
+    <div class="auth-desktop-left-panel">
+        <div class="auth-desktop-left-overlay"></div>
+
+        <!-- Logo et Header -->
+        <div class="auth-desktop-left-content">
+            <div class="auth-desktop-logo">
+                <img src="~/images/skoruba-icon.svg" alt="SmartKitchen" class="w-full h-full" />
+            </div>
+            <div class="flex flex-col gap-2">
+                <h1 class="auth-desktop-title">Smart-Kitchen</h1>
+                <p class="auth-desktop-subtitle">Identity Provider Portal</p>
+            </div>
+        </div>
+
+        <!-- Main Text -->
+        <div class="auth-desktop-left-content">
+            <h2 class="auth-desktop-main-text">Your Kitchen, Organized.</h2>
+            <p class="auth-desktop-description">
+                One secure key to manage food inventory, shared dynamic shopping lists, smart-fridge integrations, and
+                curated meal planners for the whole household.
+            </p>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="auth-desktop-social-proof">
+            <div class="auth-desktop-avatar-group">
+                <img src="~/images/f2b3193647d82c98bb785a6637a1a5b04b79a501.png" alt="User"
+                     class="auth-desktop-avatar" />
+                <img src="~/images/f2b3193647d82c98bb785a6637a1a5b04b79a501.png" alt="User"
+                     class="auth-desktop-avatar" />
+                <img src="~/images/f2b3193647d82c98bb785a6637a1a5b04b79a501.png" alt="User"
+                     class="auth-desktop-avatar" />
+            </div>
+            <p class="auth-desktop-proof-text">Powering 24,000+ happy smart-kitchens daily.</p>
+        </div>
+    </div>
+
+    <!-- Panneau Droit - Formulaire -->
+    <div class="auth-desktop-right-panel">
+        <div class="auth-desktop-form-container">
+            <!-- Welcome Header -->
+            <div class="flex flex-col gap-3">
+                <h1 class="auth-desktop-welcome-title">Welcome Back</h1>
+                <p class="auth-desktop-welcome-subtitle">
+                    Log in to coordinate your smart kitchen ecosystem and shared pantry logs securely.
+                </p>
+            </div>
+
+            @RenderBody()
+        </div>
+
+        <!-- Footer -->
+        <p class="auth-footer-text">
+            Secured by Smart-Kitchen IDP. Your credentials protect access to your connected smart kitchen ecosystem.
+        </p>
+    </div>
+
+    @await RenderSectionAsync("scripts", required: false)
+</body>
+
+</html>
