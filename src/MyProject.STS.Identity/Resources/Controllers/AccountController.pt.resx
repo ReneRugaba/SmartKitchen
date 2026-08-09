@@ -144,4 +144,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>Não foi possível carregar o usuário de autenticação de dois fatores.</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Entrar</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Sua cozinha, organizada.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Uma chave segura para gerenciar inventário de alimentos, listas de compras compartilhadas dinâmicas, integrações de geladeiras inteligentes e planejadores de refeições curados para toda a família.</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Impulsionando 24.000+ cozinhas inteligentes felizes diariamente.</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

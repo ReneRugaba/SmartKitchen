@@ -205,27 +205,43 @@
   }
 
   .auth-responsive-left-content {
-    @apply relative z-10 flex flex-col gap-4 lg:gap-6 w-full;
+    @apply relative z-10 flex flex-col w-full;
   }
 
   .auth-responsive-logo {
-    @apply w-14 h-14 lg:w-16 lg:h-16;
+    /* Logo size: 64px x 64px (controlled by img element classes) */
   }
 
   .auth-responsive-title {
-    @apply font-black text-white text-2xl lg:text-[36px];
+    @apply font-black text-white text-[36px] leading-tight;
   }
 
   .auth-responsive-subtitle {
-    @apply font-bold text-[#22c55e] text-[13px] lg:text-[14px] uppercase;
+    @apply font-bold text-[#22c55e] text-[14px] uppercase tracking-wide;
   }
 
   .auth-responsive-main-text {
-    @apply font-extrabold leading-[48px] lg:leading-[56px] text-[36px] lg:text-[48px] text-white;
+    @apply font-extrabold leading-[56px] text-[48px] text-white;
   }
 
   .auth-responsive-description {
-    @apply font-normal leading-[24px] lg:leading-[26px] text-[15px] lg:text-[16px] text-[#d2dcd4];
+    @apply font-normal leading-[26px] text-[16px] text-[#d2dcd4];
+  }
+
+  .auth-responsive-social-proof {
+    @apply flex items-center gap-3;
+  }
+
+  .auth-responsive-avatar-group {
+    @apply flex;
+  }
+
+  .auth-responsive-avatar {
+    @apply w-9 h-9 rounded-full border-2 border-white;
+  }
+
+  .auth-responsive-proof-text {
+    @apply font-medium text-[14px] text-white;
   }
 
   .auth-responsive-social-proof {

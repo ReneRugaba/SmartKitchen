@@ -144,4 +144,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>Kan ikke indlæse totrinsbekræftelse for denne bruger.</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Log ind</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Dit køkken, organiseret.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>En nøgle til at administrere madinventar, delte dynamiske indkøbslister, smart-køleskabsintegrationer og kurerede måltidsplaner for hele husstanden.</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Drifter 24.000+ glade smart-køkkener dagligt.</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

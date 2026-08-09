@@ -38,4 +38,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>Kan two-factor authenticatie user niet laden.</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Inloggen</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Jouw keuken, georganiseerd.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Eén veilige sleutel om voedselinventaris, gedeelde dynamische boodschappenlijsten, slimme koelkastintegraties en samengestelde maaltijdplanners voor het hele huishouden te beheren.</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Aandrijving voor 24.000+ gelukkige slimme keukens dagelijks.</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

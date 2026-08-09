@@ -13,128 +13,133 @@
 }
 
 <div class="flex flex-col gap-6 w-full">
+    <!-- Welcome Header (Desktop/Tablet) -->
+    <div class="hidden md:flex flex-col gap-2">
+        <h1 class="font-black text-[#1c241e] text-2xl lg:text-[32px]">@Localizer["WelcomeBackTitle"]</h1>
+        <p class="font-normal leading-[20px] lg:leading-[22px] text-[#526056] text-[14px] lg:text-[15px]">
+            @Localizer["WelcomeBackSubtitle"]
+        </p>
+    </div>
+
     <!-- Tabs Log In / Sign Up -->
     <div class="bg-[#e1e8e3] h-[50px] flex items-center p-1 rounded-[25px] w-full">
         <div class="flex-1 h-full flex items-center justify-center bg-white rounded-[21px]">
-            <p class="font-bold text-[#1c241e] text-[14px]">Log In</p>
+            <p class="font-bold text-[#1c241e] text-[14px]">@Localizer["TabLogin"]</p>
         </div>
         <div class="flex-1 h-full flex items-center justify-center rounded-[21px]">
-            <a asp-action="Register" asp-controller="Account" class="font-semibold text-[#526056] text-[14px]">Sign
-                Up</a>
-            </div>
-        </div>
-
-        <!-- Formulaire de connexion -->
-        @if (Model.EnableLocalLogin)
-        {
-            <form asp-route="Login" class="flex flex-col gap-4 w-full">
-                <input type="hidden" asp-for="ReturnUrl" />
-
-                @await Html.PartialAsync("_ValidationSummary")
-
-                <!-- Email Address -->
-                <div class="flex flex-col gap-2 w-full">
-                    <p class="font-extrabold text-[#526056] text-[12px] uppercase">
-                        @Localizer[LoginPolicyResolutionLocalizer.GetUserNameLocalizationKey(Model.LoginResolutionPolicy)]
-                    </p>
-                    <div
-                        class="bg-white border border-[#e1e8e3] border-solid flex gap-3 h-[50px] items-center px-4 rounded-[14px] w-full">
-                        <div class="w-5 h-5 flex items-center justify-center">
-                            <lucideicon name="mail" class="w-full h-full" />
-                        </div>
-                        <input id="Username" class="flex-1 font-normal text-[#1c241e] text-[15px] outline-none bg-transparent"
-                               asp-for="Username" autofocus tw-validation placeholder="anderson.fam@icloud.com" />
-                    </div>
-                </div>
-
-                <!-- Password -->
-                <div class="flex flex-col gap-2 w-full">
-                    <p class="font-extrabold text-[#526056] text-[12px] uppercase">@Localizer["Password"]</p>
-                    <div
-                        class="bg-white border border-[#e1e8e3] border-solid flex gap-3 h-[50px] items-center px-4 rounded-[14px] w-full">
-                        <div class="w-5 h-5 flex items-center justify-center">
-                            <lucideicon name="lock" class="w-full h-full" />
-                        </div>
-                        <input id="Password" type="password"
-                               class="flex-1 font-normal text-[#1c241e] text-[15px] outline-none bg-transparent" asp-for="Password"
-                               autocomplete="off" tw-validation placeholder="••••••••••••" />
-                        <div class="w-5 h-5 flex items-center justify-center cursor-pointer">
-                            <lucideicon name="eye-off" class="w-full h-full" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Forgot password -->
-                <div class="flex items-start justify-end w-full">
-                    <a asp-action="ForgotPassword" asp-controller="Account"
-                       class="font-semibold text-[#15803d] text-[14px] hover:underline">
-                        @Localizer["Forgot"]
-                    </a>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="flex flex-col items-start w-full">
-                    <button type="submit" name="button" value="login"
-                            class="bg-[#22c55e] drop-shadow-[0px_4px_8px_rgba(58,77,61,0.04)] flex h-[54px] items-center justify-center rounded-[27px] w-full">
-                        <p class="font-bold text-[16px] text-white">
-                            @Localizer["Login"]
-                        </p>
-                    </button>
-                </div>
-
-                @if (Model.AllowRememberLogin)
-                {
-                    <div class="flex items-center space-x-2">
-                        <input asp-for="RememberLogin" type="checkbox"
-                               class="h-4 w-4 rounded border-gray-300 text-[#22c55e] focus:ring-[#22c55e]" id="RememberLogin" />
-                        <label for="RememberLogin" class="text-sm font-medium leading-none cursor-pointer text-[#526056]">
-                            @Localizer["Remember"]
-                        </label>
-                    </div>
-                }
-
-                <!-- Divider -->
-                <div class="flex gap-4 items-center w-full">
-                    <div class="flex-1 h-px bg-[#e1e8e3]"></div>
-                    <p class="font-semibold text-[#8c9b90] text-[13px] whitespace-nowrap">@Localizer["Or"]</p>
-                    <div class="flex-1 h-px bg-[#e1e8e3]"></div>
-                </div>
-
-                <!-- Social Login -->
-                <div class="flex gap-3 items-start w-full">
-                    <button type="button"
-                            class="bg-white border border-[#e1e8e3] border-solid flex-1 flex gap-2 h-[48px] items-center justify-center rounded-[24px]">
-                        <lucideicon name="chrome" class="w-5 h-5" />
-                        <p class="font-semibold text-[#1c241e] text-[14px]">Google</p>
-                    </button>
-                    <button type="button"
-                            class="bg-white border border-[#e1e8e3] border-solid flex-1 flex gap-2 h-[48px] items-center justify-center rounded-[24px]">
-                        <lucideicon name="apple" class="w-5 h-5" />
-                        <p class="font-semibold text-[#1c241e] text-[14px]">Apple</p>
-                    </button>
-                </div>
-            </form>
-        }
-
-        <!-- Cancel button (mobile only) -->
-        <div class="flex justify-end w-full">
-            <button type="button" name="button" value="cancel"
-                    class="font-semibold text-[#526056] text-[14px] hover:underline">
-                @Localizer["Cancel"]
-            </button>
-        </div>
-
-        <!-- Passkey -->
-        <div class="space-y-3">
-            <passkey-submit operation="@PasskeyOperation.Request" name="Passkey" email-name="Username"
-                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
-                            formnovalidate>
-                <lucideicon name="fingerprint" class="inline-block h-4 w-4 mr-2" />
-                @Localizer["LoginWithPasskey"]
-            </passkey-submit>
+            <a asp-action="Register" asp-controller="Account" class="font-semibold text-[#526056] text-[14px]">
+                @Localizer["TabSignUp"]
+            </a>
         </div>
     </div>
-</div>
+
+    <!-- Formulaire de connexion -->
+    @if (Model.EnableLocalLogin)
+    {
+        <form asp-route="Login" class="flex flex-col gap-4 w-full">
+            <input type="hidden" asp-for="ReturnUrl" />
+
+            @await Html.PartialAsync("_ValidationSummary")
+
+            <!-- Email Address -->
+            <div class="flex flex-col gap-2 w-full">
+                <p class="font-extrabold text-[#526056] text-[12px] uppercase">
+                    @Localizer["EmailAddressLabel"]
+                </p>
+                <div
+                    class="bg-white border border-[#e1e8e3] border-solid flex gap-3 h-[50px] items-center px-4 rounded-[14px] w-full">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <lucideicon name="mail" class="w-full h-full" />
+                    </div>
+                    <input id="Username" class="flex-1 font-normal text-[#1c241e] text-[15px] outline-none bg-transparent"
+                           asp-for="Username" autofocus tw-validation placeholder="anderson.fam@icloud.com" />
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="flex flex-col gap-2 w-full">
+                <p class="font-extrabold text-[#526056] text-[12px] uppercase">@Localizer["PasswordLabel"]</p>
+                <div
+                    class="bg-white border border-[#e1e8e3] border-solid flex gap-3 h-[50px] items-center px-4 rounded-[14px] w-full">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <lucideicon name="lock" class="w-full h-full" />
+                    </div>
+                    <input id="Password" type="password"
+                           class="flex-1 font-normal text-[#1c241e] text-[15px] outline-none bg-transparent" asp-for="Password"
+                           autocomplete="off" tw-validation placeholder="••••••••••••" />
+                    <button type="button" id="togglePassword"
+                            class="w-5 h-5 flex items-center justify-center cursor-pointer focus:outline-none">
+                        <span id="eyeOpen" class="hidden w-full h-full">
+                            <lucideicon name="eye" class="w-full h-full" />
+                        </span>
+                        <span id="eyeClosed" class="w-full h-full">
+                            <lucideicon name="eye-off" class="w-full h-full" />
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Forgot password -->
+            <div class="flex items-start justify-end w-full">
+                <a asp-action="ForgotPassword" asp-controller="Account"
+                   class="font-semibold text-[#15803d] text-[14px] hover:underline">
+                    @Localizer["ForgotPasswordLink"]
+                </a>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex flex-col items-start w-full">
+                <button type="submit" name="button" value="login"
+                        class="bg-[#22c55e] drop-shadow-[0px_4px_8px_rgba(58,77,61,0.04)] flex h-[54px] items-center justify-center rounded-[27px] w-full">
+                    <p class="font-bold text-[16px] text-white">
+                        @Localizer["LoginButton"]
+                    </p>
+                </button>
+            </div>
+
+            @if (Model.AllowRememberLogin)
+            {
+                <div class="flex items-center space-x-2">
+                    <input asp-for="RememberLogin" type="checkbox"
+                           class="h-4 w-4 rounded border-gray-300 text-[#22c55e] focus:ring-[#22c55e]" id="RememberLogin" />
+                    <label for="RememberLogin" class="text-sm font-medium leading-none cursor-pointer text-[#526056]">
+                        @Localizer["RememberMeCheckbox"]
+                    </label>
+                </div>
+            }
+
+            <!-- Divider -->
+            <div class="flex gap-4 items-center w-full">
+                <div class="flex-1 h-px bg-[#e1e8e3]"></div>
+                <p class="font-semibold text-[#8c9b90] text-[13px] whitespace-nowrap">@Localizer["OrDivider"]</p>
+                <div class="flex-1 h-px bg-[#e1e8e3]"></div>
+            </div>
+
+            <!-- Social Login -->
+            <div class="flex gap-3 items-start w-full">
+                <button type="button"
+                        class="bg-white border border-[#e1e8e3] border-solid flex-1 flex gap-2 h-[48px] items-center justify-center rounded-[24px]">
+                    <lucideicon name="chrome" class="w-5 h-5" />
+                    <p class="font-semibold text-[#1c241e] text-[14px]">Google</p>
+                </button>
+                <button type="button"
+                        class="bg-white border border-[#e1e8e3] border-solid flex-1 flex gap-2 h-[48px] items-center justify-center rounded-[24px]">
+                    <lucideicon name="apple" class="w-5 h-5" />
+                    <p class="font-semibold text-[#1c241e] text-[14px]">Apple</p>
+                </button>
+            </div>
+        </form>
+    }
+
+    <!-- Passkey -->
+    <div class="space-y-3">
+        <passkey-submit operation="@PasskeyOperation.Request" name="Passkey" email-name="Username"
+                        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
+                        formnovalidate>
+            <lucideicon name="fingerprint" class="inline-block h-4 w-4 mr-2" />
+            @Localizer["LoginWithPasskey"]
+        </passkey-submit>
+    </div>
 </div>
 
 @if (Model.VisibleExternalProviders.Any())
@@ -158,8 +163,6 @@
             </a>
         }
     </div>
-}
-
 }
 
 @if (!Model.EnableLocalLogin && Model.VisibleExternalProviders.Any())
@@ -188,17 +191,14 @@
         </div>
     </div>
 }
-</div>
-</div>
 
 <div class="mt-4 text-center">
     <p class="text-xs text-muted-foreground">
         @Localizer["PrivacyNotice"]
     </p>
 </div>
-</div>
-</div>
 
 @section scripts {
     <script src="~/js/passkey-submit.js" asp-append-version="true"></script>
+    <script src="~/js/password-toggle.js" asp-append-version="true"></script>
 }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Kirjaudu sisään</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="BrandTitle" xml:space="preserve">
+    <value>Smart-Kitchen</value>
+    <comment>Brand title (Smart-Kitchen)</comment>
+  </data>
+  <data name="BrandSubtitle" xml:space="preserve">
+    <value>Identiteettipalvelun portaali</value>
+    <comment>Brand subtitle (Identity Provider Portal)</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Keittiösi, järjestettynä.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Hallinnoi reseptejäsi, suunnittele aterioita ja järjestä keittiösi tehokkaasti.</value>
+    <comment>Main description text</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Luotettu yli 10 000 kotikokin toimesta maailmanlaajuisesti</value>
+    <comment>Social proof text at bottom of left panel</comment>
+  </data>
+  <data name="SecuredBySmartKitchen" xml:space="preserve">
+    <value>Suojattu Smart-Kitchen IDP:llä. Tietosi suojaavat pääsyä yhdistettyyn älykeittiöjärjestelmääsi.</value>
+    <comment>Footer security notice text</comment>
+  </data>
+</root>

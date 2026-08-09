@@ -144,4 +144,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>Unable to load two-factor authentication user.</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Log In</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Your Kitchen, Organized.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>One secure key to manage food inventory, shared dynamic shopping lists, smart-fridge integrations, and curated meal planners for the whole household.</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Powering 24,000+ happy smart-kitchens daily.</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

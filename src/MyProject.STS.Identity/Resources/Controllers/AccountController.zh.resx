@@ -144,4 +144,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>无法加载双因素身份验证用户。</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>登录</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>您的厨房，井然有序。</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>一个安全的密钥，用于管理食品库存、共享动态购物清单、智能冰箱集成以及为全家策划的膳食计划。</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>每天为 24,000+ 个幸福的智能厨房提供支持。</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Connexion</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="BrandTitle" xml:space="preserve">
+    <value>Smart-Kitchen</value>
+    <comment>Brand title (Smart-Kitchen)</comment>
+  </data>
+  <data name="BrandSubtitle" xml:space="preserve">
+    <value>Portail Fournisseur d'Identité</value>
+    <comment>Brand subtitle (Identity Provider Portal)</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Votre cuisine, organisée.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Gérez vos recettes, planifiez vos repas et organisez votre cuisine efficacement.</value>
+    <comment>Main description text</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Adopté par plus de 10 000 chefs à domicile dans le monde entier</value>
+    <comment>Social proof text at bottom of left panel</comment>
+  </data>
+  <data name="SecuredBySmartKitchen" xml:space="preserve">
+    <value>Sécurisé par Smart-Kitchen IDP. Vos identifiants protègent l'accès à votre écosystème de cuisine intelligente connecté.</value>
+    <comment>Footer security notice text</comment>
+  </data>
+</root>

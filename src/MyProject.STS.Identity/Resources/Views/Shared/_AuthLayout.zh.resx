@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>登录</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="BrandTitle" xml:space="preserve">
+    <value>Smart-Kitchen</value>
+    <comment>Brand title (Smart-Kitchen)</comment>
+  </data>
+  <data name="BrandSubtitle" xml:space="preserve">
+    <value>身份提供商门户</value>
+    <comment>Brand subtitle (Identity Provider Portal)</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>您的厨房，井井有条。</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>管理您的食谱，规划膳食，高效组织您的厨房。</value>
+    <comment>Main description text</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>受到全球 10,000 多名家庭厨师的信赖</value>
+    <comment>Social proof text at bottom of left panel</comment>
+  </data>
+  <data name="SecuredBySmartKitchen" xml:space="preserve">
+    <value>由 Smart-Kitchen IDP 保护。您的凭据可保护对您连接的智能厨房生态系统的访问。</value>
+    <comment>Footer security notice text</comment>
+  </data>
+</root>

@@ -144,4 +144,20 @@
   <data name="Unable2FA" xml:space="preserve">
     <value>Kahden tekijän todennuksen käyttäjää ei voi ladata.</value>
   </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Kirjaudu sisään</value>
+    <comment>Page title for authentication pages</comment>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Keittiösi, järjestettynä.</value>
+    <comment>Main title on left panel (Desktop)</comment>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Yksi turvallinen avain hallita ruokavarastoa, jaettuja dynaamisia ostoslistoja, älyjääkaappi-integraatioita ja kuratoituja ateria-suunnitelmia koko kotitaloudelle.</value>
+    <comment>Main description on left panel (Desktop)</comment>
+  </data>
+  <data name="SocialProof" xml:space="preserve">
+    <value>Voimauttaa 24 000+ tyytyväistä älykeittiötä päivittäin.</value>
+    <comment>Social proof text on left panel (Desktop)</comment>
+  </data>
 </root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <data name="WelcomeBackTitle" xml:space="preserve"><value>Bentornato</value></data>
+  <data name="WelcomeBackSubtitle" xml:space="preserve"><value>Accedi per coordinare il tuo ecosistema di cucina intelligente e i registri della dispensa condivisi in modo sicuro.</value></data>
+  <data name="TabLogin" xml:space="preserve"><value>Accedi</value></data>
+  <data name="TabSignUp" xml:space="preserve"><value>Iscriviti</value></data>
+  <data name="EmailAddressLabel" xml:space="preserve"><value>Indirizzo email</value></data>
+  <data name="PasswordLabel" xml:space="preserve"><value>Password</value></data>
+  <data name="ForgotPasswordLink" xml:space="preserve"><value>Password dimenticata?</value></data>
+  <data name="LoginButton" xml:space="preserve"><value>Accedi a Smart-Kitchen</value></data>
+  <data name="RememberMeCheckbox" xml:space="preserve"><value>Ricordami</value></data>
+  <data name="OrDivider" xml:space="preserve"><value>o continua con</value></data>
+  <data name="LoginWithPasskey" xml:space="preserve"><value>Accedi con passkey</value></data>
+  <data name="InvalidRequestTitle" xml:space="preserve"><value>Richiesta non valida</value></data>
+  <data name="NoSchemaMessage" xml:space="preserve"><value>Nessuno schema di accesso disponibile</value></data>
+  <data name="PrivacyNotice" xml:space="preserve"><value>Accedendo, accetti la nostra politica sulla privacy</value></data>
+  <data name="SecuredBySmartKitchen" xml:space="preserve"><value>Protetto da Smart-Kitchen IDP. Le tue credenziali proteggono l'accesso al tuo ecosistema di cucina intelligente connesso.</value></data>
+</root>
