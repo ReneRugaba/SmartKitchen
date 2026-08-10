@@ -3,7 +3,7 @@
   <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
   <resheader name="version"><value>2.0</value></resheader>
   <data name="WelcomeBackTitle" xml:space="preserve"><value>Bienvenue</value></data>
-  <data name="WelcomeBackSubtitle" xml:space="preserve"><value>Connectez-vous pour coordonner votre écosystème de cuisine intelligente et vos journaux de pantry partagés en toute sécurité.</value></data>
+  <data name="WelcomeBackSubtitle" xml:space="preserve"><value>Connectez-vous pour coordonner votre écosystème de cuisine intelligente et votre garde manger en toute sécurité.</value></data>
   <data name="TabLogin" xml:space="preserve"><value>Se connecter</value></data>
   <data name="TabSignUp" xml:space="preserve"><value>S'inscrire</value></data>
   <data name="EmailAddressLabel" xml:space="preserve"><value>Adresse e-mail</value></data>

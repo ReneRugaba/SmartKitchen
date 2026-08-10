@@ -151,7 +151,7 @@
     <comment>Page title for authentication pages</comment>
   </data>
   <data name="MainTitle" xml:space="preserve">
-    <value>Votre cuisine, intelligente..</value>
+    <value>Votre cuisine, intelligente.</value>
     <comment>Main title on left panel (Desktop)</comment>
   </data>
   <data name="MainDescription" xml:space="preserve">
